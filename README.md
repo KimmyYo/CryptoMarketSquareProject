@@ -39,26 +39,26 @@ This crypto marketplace project combines HTML, CSS, JavaScript, PHP, and MySQL t
 
 ## Custom Product Finding 
 1. Found Your Hashtag 
-![Find Hashtag](images/img3.png)
+![Find Hashtag](img/img3.png)
 2. Add to cart 
-![Add to cart](images/img4.png)
+![Add to cart](img/img4.png)
 3. Payment 
-![Payment](images/img10.png)
+![Payment](img/img10.png)
 
 ## Dashboard 
 1. Seller main dashboard
-![Seller Dashboard](images/img5.png)
+![Seller Dashboard](img/img5.png)
 2. Upload section 
-![Upload Image](images/img6.png)
+![Upload Image](img/img6.png)
 3. My Product section 
-![My Product](images/img7.png)
+![My Product](img/img7.png)
 4. Favorite section 
-![Favorite](images/img8.png)
+![Favorite](img/img8.png)
 
 
 ## Crypto 
 1. Daily Checkin with Earning Crypto Money 
-![Crypto](images/img9.png)
+![Crypto](img/img9.png)
 
 
 
