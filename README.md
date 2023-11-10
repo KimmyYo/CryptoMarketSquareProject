@@ -30,11 +30,11 @@ This crypto marketplace project combines HTML, CSS, JavaScript, PHP, and MySQL t
 <hr>
 
 ## Products Browsing Page
-![Browse Page](images/img1.png)
+![Browse Page](img/img1.png)
 - selecting products based on different categories (with breadcrumbs)
 
 ## Product Details Page 
-![Detail Page](images/img2.png)
+![Detail Page](img/img2.png)
 - interactive + buttons allowing more likes and products details 
 
 ## Custom Product Finding 
