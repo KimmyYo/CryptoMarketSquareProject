@@ -1,0 +1,103 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Fugaz+One&family=Heebo:wght@300;400&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,600;1,600;1,700&family=Leckerli+One&family=Lora:wght@400;500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300&family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@300;500&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&family=Signika+Negative:wght@500;600&display=swap');
+
+
+body {
+background: #FFB75E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+}
+
+*{
+	
+	box-sizing: border-box;
+	font-family: 'PT Sans', sans-serif;
+}
+
+form {
+	width: 500px;
+	border: 2px solid #ccc;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 40px;
+	font-family: 'Dancing Script', cursive;
+	font-size: 5em;
+}
+
+input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 6px auto;
+	border-radius: 5px;
+	
+}
+input:focus{
+	outline: none;
+	border: 2px solid #eca123;
+}
+label {
+	color: #888;
+	font-size: 18px;
+	padding: 1px 10px;
+}
+
+button {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+}
+button:hover{
+	opacity: .7;
+}
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.success {
+   background: #D4EDDA;
+   color: #40754C;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+.ca {
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: #444;
+}
+.ca:hover {
+	text-decoration: underline;
+} 

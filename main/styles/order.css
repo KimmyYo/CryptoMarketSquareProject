@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap");
+
+p{
+    margin: 0;
+}
+
+.cart {
+    width: 966px;
+    margin: auto;
+}
+
+
+/* 頭段 */
+
+.head_sec {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logo svg {      /*logo那顆*/
+    width: 100px;
+    height: 50px;
+    color: black;
+    padding-left: 30px;
+}
+
+.logo_side {
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20px;
+}
+
+
+/* 購物車欄位bar */
+
+.cart_bar {
+    display: flex;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.cart_bar span{
+    font-size: 13px;
+    color: #696969;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0 1px;
+}
+
+.cart_bar_col1 {
+    padding: 5px 270px;
+}
+
+.cart_bar_col2 {
+    padding: 5px 30px;
+}
+
+.cart_bar_col3 {
+    padding: 5px 30px;
+}
+
+.cart_bar_col4 {
+    padding: 5px 30px;
+}
+
+
+
+/* 購物車內容 */
+
+/* 個別賣家條 */
+.product_seller_head {
+    padding-top: 10px;
+}
+
+.product_seller {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product_seller_head_chat {
+    width: 15px;
+    height: 15px;
+    padding-left: 20px;
+}
+/* 個別賣家條 */
+
+/* 個別商品條 */
+.cart_product_detail {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.product_head {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding-left: 30px;
+    width: 300px;
+}
+
+.product_head_specs {
+    width: 150px;
+    color: #808080;
+}
+
+.product_unit_price, .product_unit_amount,
+ .product_unit_tprice, .product_head_specs {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.product_unit_price {
+    width: 130px;
+    text-align: center;
+}
+
+.product_unit_amount {
+    width: 110px;
+    text-align: center;
+}
+
+.product_amount {
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.product_unit_tprice {
+    width: 130px;
+    text-align: center;
+}
+
+
+.product_img {
+    width: 90px;
+    height: 90px;
+    padding-left: 20px;
+}
+
+.product_delete {
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    color: #696969;
+}
+
+
+/* 大灰框 */
+
+.trans_info {
+    border: 5px #E8E8E8 solid;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0;
+}
+
+
+/* 地址 */
+
+.trans_info_title {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0 0 20px;
+}
+
+.remark {
+    width: 915px;
+    height: 30px;
+    border: none;
+    padding: 5px 20px;
+}
+
+.shipping_opt {
+    display: flex;
+}
+
+.shipping_opt_input {
+    border: #E8E8E8 solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.shipping_opt_text {
+    padding-left: 60px;
+}
+
+
+.shipping_opt_adress {
+    padding: 20px 0 20px 60px;
+}
+
+
+/* 付款 */
+
+.pay_section {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.paytotal {
+    font-size: 18px;
+    padding-left: 450px;
+    padding-top: 23px;
+}
+
+.paytotal_price {
+    font-size: 24px;
+    color: orangered;
+    font-weight: 600;
+    padding: 16px 0 0 20px;
+}
+
+.pay_method {
+    width: 200px;
+    margin: 0 20px;
+    background-color: #ff8f14;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition:all 0.25s ease;
+}
+
+.pay_method:hover {
+    opacity: 0.8;
+}

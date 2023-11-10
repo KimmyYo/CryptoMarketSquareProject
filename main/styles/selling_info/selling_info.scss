@@ -1,0 +1,245 @@
+@import '../all_style';
+.whole_box{
+    height: 8vh;
+    
+    
+}
+#selling_board{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+
+    .left_part{
+        flex: 0 0 60%;
+        height: 120vh;
+        background-color: #fff;
+        .upper{
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+            .widget{
+                width: 230px;
+                padding: 1em;
+                border-radius: 3px;
+                background-color: rgba(245, 244, 244, 0.815);
+
+            }
+            .title{
+                font-size: .9em;
+                font-weight: 600;
+                margin-bottom: 3px;
+            }
+            
+            .numbers{
+                font-size: 1.5em;
+                font-weight: 700;
+                // font-family: 'OpenSans', sans-serif;
+            }
+            .trend{
+                
+                color: white;
+                font-size: 0.8em;
+                padding: 1px 3px;
+                border-radius: 10px;
+                .grow{
+                    display: flex;
+                    gap: 3px;
+                    font-weight:500;
+                }
+                svg{
+                    
+                    width: 15px;
+                    height: 15px;
+                }
+                span{
+                    color:rgb(68, 67, 67);
+                }
+            }
+            
+           
+          
+        }
+        .middle{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 1em;
+            margin-bottom: 1em;
+           
+            .chart{
+                width: 755px;
+                height: auto;
+                background-color: rgba(245, 244, 244, 0.815);
+                padding: 1em;
+                .title{
+                    font-size: 1.3em;
+                    font-weight: 600;
+                    margin-bottom: 0.5em;
+                }
+                // margin-bottom: 2em;
+                
+               
+            }
+           
+        }
+        .bottom{
+            background-color: rgba(245, 244, 244, 0.815);
+            padding: 1.2em 1em 0em 1em;
+            margin-top: 2em;
+            margin-left: 2em;
+            width: 760px;
+            .title{
+                font-size: 1.3em;
+                font-weight: 600;
+                margin-bottom: 0.5em;
+            }
+            .header{
+                display: flex;
+                gap: 10px;
+                background-color: rgb(236, 234, 234);
+                padding: 0.1em 0;
+                font-size: 0.9em;
+                font-weight: 600;
+                .head{
+                    text-align: center;
+                    width: 100px;
+                }
+                .product{
+                    width: 200px;
+                    text-align: left;
+                    padding-left: 0.5em;
+                }
+                // .price, .orders, .stock, .amount{
+                   
+                // }
+            }
+            .info{
+                font-family: 'Open Sans', sans-serif;
+                padding: 0.5em 0em;
+                width: auto;
+                .info_box{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 10px;
+                    width: 100%;
+                    margin-bottom: 5px;
+                    .first_header{
+                        padding-left: 0.3em;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 10px;
+                        width: 200px;
+                        
+                        .product_image{
+                            img{
+                                width: 50px;
+                                height: 50px;
+                                object-fit: cover;
+                            }
+                        }
+                        
+                    }
+                    .head{
+                        width: 100px;
+                        // padding: 0 1em;
+                        text-align: center;
+                       
+                    }
+                }
+               
+              
+            
+            }
+        }
+    }
+    .right_part{
+        flex: 0 0 35%;
+        height: auto;
+       
+        .upper{
+            .recent_orders{
+                background-color: rgba(245, 244, 244, 0.815);
+                width: 320px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                padding: 1em;
+                .title{
+                    font-size: 1.4em;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                .order_box{
+                    width: 100%;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 600;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1em;
+                    padding: 10px 8px 2px 8px;
+                    border-radius: 5px;
+                    // box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                    // justify-content: center;
+                    // align-items: center;
+
+                    .image_box{
+                        flex: 0 0 20%;
+                        img{
+                            width: 60px;
+                            height: 60px;
+                            object-fit: cover;
+                        }
+                    }
+                    .info_box{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        gap: 5px;
+                        flex: 0 0 40%;
+                        .pName{
+                            font-size: 1.1em;
+                            
+                        }
+                        .orderTime{
+                            font-size: 0.8em;
+                            font-weight: 400;
+                            color: #838383;
+                        }
+                    }
+                    .price_box{
+                        flex: 0 0 10%;
+                        margin-left: 2em;
+                        font-size: 0.8em;
+                        font-family: 'OpenSans', sans-serif;
+                        font-weight: 500;
+                        display: flex;
+                        justify-content:center;
+                        align-items: center;
+                        background-color: #bdbcbb;
+                        height: 20px;
+                        width: auto;
+                        padding: 10px;
+                        margin-top: 20px;
+                        border-radius: 5px;
+                    }
+                    
+                  
+                }
+                
+                
+            }
+        }
+    }
+
+
+}

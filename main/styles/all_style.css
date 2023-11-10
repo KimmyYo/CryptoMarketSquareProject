@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Fugaz+One&family=Heebo:wght@300;400&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,600;1,600;1,700&family=Lora:wght@400;500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300&family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@300;500&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&family=Signika+Negative:wght@500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #ffffff;
+  transition: 0.5s;
+  padding: 1em;
+  border-bottom: 1px solid #ccc;
+  height: 80px;
+}
+.sticky .logo {
+  display: block;
+  justify-content: flex-start;
+  margin-bottom: 6em;
+  transition: 0.6s;
+}
+.sticky .logo svg {
+  scale: 0.5;
+}/*# sourceMappingURL=all_style.css.map */

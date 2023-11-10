@@ -1,0 +1,314 @@
+@import '../all_style';
+
+
+
+#query_table{
+    height: 100px;
+    margin: 3em 0 3em 0;
+    .title{
+        margin-bottom: 10px;
+    }
+    #filter_form{
+        display: flex;
+        width: 900px;
+        flex-wrap: wrap;
+        gap: 1em;
+
+        
+    }
+    .input_box{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        min-height: 50px;
+        label{
+            font-size: .8em;
+            color: rgb(134, 133, 133);
+        }
+        .inner{
+            height: 60px;
+        }
+        
+    }
+    select, input{
+        width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid rgb(209, 209, 209);
+        // padding-left: 1em;
+        &:focus{
+            outline: none;
+            border: 1.2px solid #2f7bc29a;
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 5px;
+            
+        }
+    }
+    #find_pName{
+        width: 400px;
+        padding: 1em;
+    }
+
+    button{
+        background: none;
+        border: none;
+        height: 38px;
+        width: 100px;
+        background-color: #eca123;
+        margin-left: 20px;
+        margin-top: 1.9em;
+        border-radius: 5px;
+        cursor: pointer;
+
+        svg{
+            // margin-top: 10px;
+        }
+        
+    }
+   
+
+}
+.product_table{
+    @include flex-box-center(column, 10);
+    justify-content: flex-start;
+    align-items: flex-start;
+    // width: 700px;
+    height: 90vh;
+    margin-top: 50px;
+    
+    .title{
+        height: 80px;
+        // margin: em 0;
+        @include flex-box-center(row, 10);
+        font-size: 2em;
+        font-weight: 600;
+    }
+    .table_row{
+        
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        width: 1000px;
+        height: 80px;
+
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        
+        .row_cell{ 
+            font-weight:400;
+            padding: 1em;
+            &:first-child{ // checkbox
+                flex: 0 0 0;
+            }
+            &:nth-child(2){ // image
+                flex: 0 0 10%;
+                img{
+                    width: 60px;
+                    height: 60px;
+                    object-fit: cover;
+                }
+            }
+            &:nth-child(3){ // pName
+                flex: 0 0 20%;
+                font-weight: 500;
+            }
+            &:nth-child(4){ // pNo
+                flex: 0 0 15%;
+            }
+            &:nth-child(5){ // price
+                flex: 0 0 10%;
+            }
+            &:nth-child(6){ // category
+                flex: 0 0 20%;
+                span{
+                    border: 1px solid #eca123;
+                    background-color: rgba(236, 163, 36, 0.349);
+                    padding: 0.2em 0.5em;
+                    border-radius: 100px;
+
+                }
+            }
+            &:nth-child(7){ // edit_button
+                flex: 0 0 5%;
+                button{
+                    border: none;
+                    background-color: #fff;
+                    &:hover svg{
+                        color: #eca123;
+                        transition: .2s;
+                    }
+
+                }
+            }
+            &:nth-child(8){
+                button{
+                    border: none;
+                    background-color: rgb(255, 255, 255);
+                    svg{
+                        color: #e63535;
+                    }
+                    &:hover svg{
+                        color: #eca123;
+                        transition: .2s;
+                    }
+
+                }
+            }   
+
+           
+        }   
+    }
+    
+}
+#edit_area{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    // background-color: rgba(167, 163, 163, 0.5);
+    backdrop-filter: blur(10px);
+   
+
+    @include flex-box-center(row, 0);
+    
+    .edit_place{
+        // display: none;
+        position: absolute;
+        top: 0;
+        left: 200px;
+        // background-color: #ffffff;
+        width: 1000px;
+        height: 600px;
+        border-radius: 10px;
+        padding: 1em;
+
+        @include flex-box-center(column, 10);
+        justify-content: flex-start;
+
+        form{
+            width: 100%;
+            height: 100%;
+            @include flex-box-center(column, 10);
+            img{
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+
+            }
+
+            input, select{
+                width: 500px;
+                height: 40px;
+                border-radius: 5px;
+                border: 1px solid rgb(209, 209, 209);
+                padding-left: 1em;
+                &:focus{
+                    outline: none;
+                    border: 1.2px solid #2f7bc29a;
+                    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 5px;
+                    
+                }
+            }
+        }
+
+    }
+    .x{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+}
+.question_section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+    background-color: rgba(167, 163, 163, 0.5);
+    backdrop-filter: blur(10px);
+    #to_delete{
+        position: fixed;
+        top: 20%;
+        left: 30%;
+        width: 600px;
+        height: 100px;
+        background-color:#fff;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        @include flex-box-center(row, 30);
+       justify-content: space-around;
+
+        #image{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+    }
+
+    #question_box{
+        position: fixed;
+        top: 40%;
+        left: 40%;
+        width: 300px;
+        height: 150px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        @include flex-box-center(column, 0);
+        font-family: 'OpenSan', sans-serif;
+        font-weight: 600;
+        padding: .8em;
+        border-radius: 10px;
+    
+        .x{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+
+            &:hover{
+                color: #ccc;
+            }
+        }
+        .question_text{
+            height: 50px;
+        }
+        .yes_no_btns{
+            position: absolute;
+            bottom: 10px;
+            margin-top: 2em;
+            button{
+                background: none;
+                border: none;
+                margin: 1em;
+                width: 100px;
+                height: 40px;
+                cursor: pointer;
+                border-radius: 10px;
+    
+               
+            }
+            .yes_btn{
+                background-color: rgb(228, 40, 40);
+                color: white;
+                &:hover{
+                    filter: grayscale(10%);
+                }
+                
+            }
+            .no_btn{
+                background-color: rgb(121, 119, 119);
+                color: white;
+                &:hover{
+                    filter: grayscale(60%);
+                }
+            }
+        }
+    
+    }
+}

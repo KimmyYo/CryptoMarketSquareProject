@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Fugaz+One&family=Heebo:wght@300;400&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,600;1,600;1,700&family=Lora:wght@400;500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300&family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@300;500&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&family=Signika+Negative:wght@500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #ffffff;
+  transition: 0.5s;
+  padding: 1em;
+  border-bottom: 1px solid #ccc;
+  height: 80px;
+}
+.sticky .logo {
+  display: block;
+  justify-content: flex-start;
+  margin-bottom: 6em;
+  transition: 0.6s;
+}
+.sticky .logo svg {
+  scale: 0.5;
+}
+
+.whole_box {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.stage, .set_hashtag {
+  display: none;
+}
+
+.side_menu {
+  width: 210px;
+  height: 100vh;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  overflow-y: auto;
+  padding-top: 100px;
+}
+.side_menu .logo {
+  height: 80px;
+  flex-shrink: 0.2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+.side_menu .logo svg {
+  color: #808080;
+  width: 40px;
+  height: 40px;
+}
+.side_menu .user {
+  height: 300px;
+  padding-top: 2em;
+  color: #808080;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-start;
+}
+.side_menu .user .user_img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+}
+.side_menu .user .user_img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.side_menu .menu_box {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #808080;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  align-items: flex-start;
+}
+.side_menu .menu_box .link_to {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.side_menu .menu_box .link_to:active {
+  color: #000000;
+}
+.side_menu .menu_box .link_to:hover {
+  cursor: pointer;
+  color: #000000;
+  transition: 0.3s;
+}
+.side_menu .menu_box .link_to svg {
+  width: 20px;
+  height: 20px;
+}
+.side_menu .menu_box .link_to span {
+  padding: 0 10px 0 15px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  transition: 0.5s;
+  padding: 1em;
+  border-bottom: 1px solid #ccc;
+}
+.sticky .logo {
+  display: block;
+  justify-content: flex-start;
+  margin-bottom: 6em;
+  transition: 0.6s;
+}
+.sticky .logo svg {
+  scale: 0.5;
+}
+
+.main_header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10em;
+  padding: 3em 1em;
+}
+.main_header .logo {
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+.main_header .logo svg {
+  color: #0c0c0c;
+  width: 80px;
+  height: 80px;
+}
+.main_header .top_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+.main_header .top_nav .left_nav .crumb {
+  font-size: 2em;
+  font-weight: 700;
+}
+.main_header .top_nav .right_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+}
+.main_header .top_nav .right_nav .search {
+  display: none;
+}
+.main_header .top_nav .right_nav .user_head {
+  width: 100px;
+  padding-top: 5px;
+  padding-left: 50px;
+  font-weight: lighter;
+  margin-right: 100px;
+  cursor: pointer;
+}
+.main_header .top_nav .right_nav .user_head a {
+  text-decoration: none;
+  color: #000000;
+}
+.main_header .top_nav .right_nav .user_head a:hover {
+  color: rgb(180, 112, 112);
+  font-weight: 700;
+}
+.main_header .top_nav .right_nav .user_head .user_login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  padding-bottom: 6px;
+  font-weight: 600;
+}
+.main_header .top_nav .right_nav .user_head .user_login .name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.main_header .top_nav .right_nav .user_head .user_login #leaving_box {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  width: 150px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  margin-top: 40px;
+  font-weight: 600;
+  font-family: "OpenSans", sans-serif;
+  display: none;
+}
+.main_header .top_nav .right_nav .user_cart {
+  display: none;
+}
+
+.dashboard {
+  margin-top: 10px;
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  justify-content: flex-start;
+  padding: 2em 2em;
+}
+.upper .total {
+  width: 12em;
+  height: 80px;
+  padding: 0.8em 1em;
+  background-color: #313131;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  align-items: flex-start;
+}
+.upper .total .title {
+  font-weight: 400;
+  font-size: 0.8em;
+}
+.upper .total .data {
+  display: flex;
+}
+.upper .total .data .numbers {
+  font-weight: 700;
+  font-size: 1.3em;
+}/*# sourceMappingURL=dash_board.css.map */

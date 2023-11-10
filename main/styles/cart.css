@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap");
+
+p{
+    margin: 0;
+}
+
+.cart {
+    width: 966px;
+    margin: auto;
+}
+
+/*頭段*/
+
+.head_sec {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logo svg {      /*logo那顆*/
+    width: 50px;
+    height: 50px;
+    color: black;
+    padding-left: 30px;
+}
+
+.logo_side {
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20px;
+}
+
+
+/* 購物車欄位bar */
+
+.cart_bar {
+    display: flex;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.cart_bar span{
+    font-size: 13px;
+    color: #696969;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0 1px;
+}
+
+.cart_bar_col1 {
+    padding: 5px 255px;
+}
+
+.cart_bar_col2 {
+    padding: 5px 30px;
+}
+
+.cart_bar_col3 {
+    padding: 5px 15px;
+}
+
+.cart_bar_col4 {
+    padding: 5px 25px;
+}
+
+.cart_bar_col5 {
+    padding: 5px 10px;
+}
+
+
+
+/* 購物車內容 */
+
+/* 個別賣家條 */
+.product_seller_head {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+   
+}
+
+.product_seller {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product_seller_head_chat {
+    width: 20px;
+    height: 20px;
+    padding-left: 20px;
+    
+    margin-right: 2em;
+    
+    
+}
+/* 個別賣家條 */
+
+
+/* 個別商品條 */
+.cart_product_detail {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+/* 自定義打勾勾 */
+.product_check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkmark {
+    position: absolute;
+    right: 5px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+.product_check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.product_check .checkmark:after {
+    right: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.product_check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.product_check:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.product_check input:checked ~ .checkmark {
+    background-color: #393939;
+}
+/* 自定義打勾勾 */
+
+
+.product_head {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding-left: 30px;
+    width: 265px;
+}
+
+.product_head_specs {
+    width: 130px;
+    color: #808080;
+}
+
+.product_unit_price, .product_unit_amount,
+ .product_unit_tprice, .product_head_specs {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.product_unit_price {
+    width: 110px;
+    text-align: center;
+}
+
+.product_unit_amount {
+    width: 100px;
+    text-align: center;
+}
+
+.product_amount {
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.product_unit_tprice {
+    width: 110px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+
+.product_img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    padding-left: 20px;
+}
+
+.product_delete {
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    color: #696969;
+}
+/* 個別商品條 */
+
+
+
+/* 結帳鈕 */
+
+.checkout {
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+}
+
+#checkout_all {
+    margin-left: 25px;
+}
+
+.checkout_selectall {
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+#product_check {
+    right: 3px;
+    top: 4px;
+    margin-left: 10px;
+}
+
+#product_check input  ~ .checkmark {
+    background-color: white;
+}
+
+#product_check input:checked ~ .checkmark {
+    background-color: #393939;
+}
+
+.checkout_total {
+    font-size: 13px;
+    padding-left: 430px;
+    padding-right: 20px;
+    width: 260px;
+    text-align: left;
+}
+
+.total_text {
+    font-size: 20px;
+    font-weight: 600;
+    color: orangered;
+}
+
+#cart_submit {
+    background-color: #704200;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    border-color: transparent;
+    cursor: pointer;
+    padding: 5px 20px;
+    transition:all 0.25s ease;
+}
+
+#cart_submit:hover {
+    opacity: 0.8;
+}
+
+.no_stock {
+    width: 100%;
+    text-align: center;
+    background-color: pink;
+    color: red;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
